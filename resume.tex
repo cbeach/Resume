@@ -1,12 +1,14 @@
-% LaTeX resume using res.cls
+%LaTeX resume using res.cls
 \documentclass[margin]{res}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textwidth}{5.1in} % set width of text portion
 
+\usepackage{multicol}
 \begin{document}
 
-% Center the name over the entire width of resume:
+
+% Center the name over the entire width of resumef:
  \moveleft.5\hoffset\centerline{\large\bf Casey M. Beach}
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
@@ -19,8 +21,8 @@
 
 \begin{resume}
  
-\section{OBJECTIVE}  A position in the field of computers with special 
-                interests in business applications programming, 
+\section{OBJECTIVE}  A position in the field of computer engineering with special 
+                interests in business application programming, 
                 information processing, and management systems. 
  
 
@@ -36,10 +38,18 @@
  				Graduated 2007 \\
  				Concentration: Entrepreneurship
  
-\section{COMPUTER \\ SKILLS}{\sl Languages:} C/C++, Python, Java, 
-							        Bash, Qt, Open GL, iOS 3 \\
-							{\sl Tools:} Vim, GDB, Valgrind, KCacheGrind, Eclipse, X Code \\
-			                {\sl Operating Systems:} Windows XP/7, Linux, OSX
+\section{COMPUTER \\ SKILLS}	\begin{multicols}{3}
+									{\sl \textbf{Languages \\ and Libraries}} \\
+									C/C+ \\ Python \\ Java \\ 
+							        Bash\\ Qt \\ Open GL \\ iOS 3 \\
+									\vfill
+									\columnbreak
+									{\sl \textbf{Tools}} \\
+							 		Vim \\ GDB\\ Valgrind \\ KCacheGrind\\ Eclipse\\ X Code \\ git \\
+									\vfill
+									\columnbreak
+			                		{\sl \textbf{Operating Systems}} \\ Windows XP/7 \\ Linux \\ OSX \\
+								\end{multicols}
  
 \section{EXPERIENCE} 
 				{\sl CS Tutor} \hfill 2011-2012 \\
