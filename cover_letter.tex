@@ -1,0 +1,63 @@
+% Cover letter using letter.sty
+\documentclass{letter} % Uses 10pt
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page 
+\textheight=8in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+\begin{document}
+
+\signature{Casey M. Beach}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Urban Robotics, Inc. \\
+33 NW First Avenue, Suite 200 \\
+Portland, OR 97209 }
+
+\begin{flushleft}
+{\large\bf Casey M. Beach}
+\end{flushleft}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill 3263 178th ave, Portland, OR 97236 \\
+\hfill (541) 990-8978 
+\end{flushright} 
+\vfill % forces letterhead to top of page
+
+ 
+\opening{To whom it may concern} 
+\begin{flushleft} 
+\noindent  I have been interested in robotics for years.  My greatest project has been my RepRap (open source 3D printer).  
+My RepRap was build from scratch, and currently resides in open tech space.  My newest project is an autonomous rover that
+will be used as a test bed for the AVT's quad-rotor.  I will use the rover to develop several algorithms for autonomous 
+navigation.  One of those algorithms will use photo OCR to navigate using signage.  This is a challenge for an autonomous
+arial vehicle competion that the AVT will be competing in.
+
+I am very interested in learning more about your company.  If you would like to know more about me please visit my github
+at the address below. \\ 
+\end{flushleft}
+\begin{center}
+	\textbf{http://github.com/cbeach}
+\end{center}
+
+
+\closing{Sincerely yours,} 
+ 
+
+ 
+\encl{resume}  				% Enclosures
+
+\end{letter}
+ 
+
+\end{document}
+
+
+
+
+
+
