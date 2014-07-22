@@ -1,0 +1,256 @@
+%LaTeX resume using res.cls
+\documentclass[overlapped]{res}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\usepackage{multicol}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\setlist[1]{noitemsep}
+
+\begin{document}
+\pagestyle{empty}
+
+\leavevmode\hbox to \textwidth{\hfil\namefont Casey M. Beach\hfil}\par
+\moveleft\hoffset\vbox{\hrule width \resumewidth height 1pt}
+\hbox to \textwidth{\hfil 6604 SE 83rd Avenue Portland, Oregon 97266\hfil}
+\hbox to \textwidth{\hfil (541) 990-8978\hfil}
+\hbox to \textwidth{\hfil beachc@gmail.com\hfil}
+
+
+\begin{resume}
+
+\section{SUMMARY OF QUALIFICATIONS} 
+    % TODO: This needs a LOT of work...
+    I am a very curious and well-rounded person with experience in a wide variety of areas.  I have 
+    lead several projects and participated in many others and I am currently actively pursuing 
+    projects in big data, machine learning, and robotics.  Below is a short list of my expertise and 
+    interests.
+    \begin{itemize}
+        \item Analysis of big data, namely social data provided by Twitter's streaming API
+        \item Researching novel ways to visualize and encode data for easy human consumption
+        \item Conceiving and writing solutions that utilize machine learning and artificial intelligence
+        \item Building and writing software for robotics platforms
+        \item Advanced fabrication and automation techniques
+    \end{itemize}
+
+\section{SKILLS}
+    \begin{multicols}{3}
+        \textbf{Languages}
+        \begin{itemize}
+            \item Python
+            \item JavaScript
+            \item Java
+            \item C/C++
+            \item PHP
+        \end{itemize}
+        \columnbreak
+
+        \textbf{Tools}
+        \begin{itemize}
+            \item Vim
+            \item Git
+            \item Valgrind
+            \item kCacheGrind
+            \item Eclipse
+        \end{itemize}
+        \columnbreak
+
+        \textbf{Libraries and Frameworks}
+        \begin{itemize}
+            \item Django
+            \item Flask \& SQLAlchemy
+            \item Backbone.js
+            \item Google Analytics
+            \item Storm
+            \item Flex and Bison
+        \end{itemize}
+    \end{multicols}
+
+\section{EXPERIENCE}
+\vspace{0.125in}
+\begin{itemize}[leftmargin=0in]
+    \item[] 
+        \textbf{PARTHENON SOFTWARE: Lead Software Developer} \hfill \textbf{December 2013-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        Parthenon specializes in custom software.  I have completed projects on a wide variety of technologies including basic 
+        web development, telecommunications software, order fulfillment, and others. \vspace{0.125in}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{Feedback Innovations} \hfill \textbf{December 2013-Present} \\
+                    Feedback Innovations is a company that collects customer satisfaction data after an ambulance ride.  Their original site was written in such a way that it was not extensible.  Another developer was hired through a third party to re-write the entire site.  The original developer disappeared, leaving the site in a very poor state.
+                    \begin{itemize}
+                        \item[\textbullet] Advised Jon Hance (project manager) and Joe Stepp (developer) on refactoring and estimates
+                        \item[\textbullet] Optimized report generation.  Large reports no longer crashes the server.
+                        \item[\textbullet] Completely re-wrote the CSV user import tool
+                    \end{itemize}
+                \end{samepage}
+
+                \begin{samepage}
+                    \textbf{2nDealer} \hfill \textbf{December 2013- April 2014} \\
+                    2nDealer is an online service that offers inventory management for business that deal with a large quantity of unique items.  
+                    The original developers were a pair of freelancers that put a flat rate bid and could not keep up with substantial feature creep.
+                    \begin{itemize}
+                        \item[\textbullet] Originally developed for medical consignment services.
+                        \item[\textbullet] Fixed a multitude of bugs
+                        \item[\textbullet] Added features including financial accounting reports, and CSV customer import
+                    \end{itemize}
+                \end{samepage}
+        \end{itemize}
+        \vspace{0.125in}
+
+    \pagebreak
+    \item[] 
+        \textbf{PARTHENON SOFTWARE: Software Developer} \hfill \textbf{April 2012-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{Avaya Bridge Conferencing} \hfill \textbf{July 2012-December 2013} \\
+                    Monitoring and control software for Spectel teleconferencing bridges.  I was the sole developer for much of the early project.
+                    \begin{itemize}
+                        \item[\textbullet] Utilizes Python Twisted, Django 1.4, Bridge communication API, web sockets, non-blocking IO
+                        \item[\textbullet] Heavily concurrent.  Uses concurrent event driven code to perform tasks.
+                        \item[\textbullet] Most communication happens over web-sockets and uses Python Twisted to serve them.
+                        \item[\textbullet] I developed a RPC framework for twisted web sockets that works well with the Django ORM
+                        \item[\textbullet] An event driven Java server handles communication over multiple bridges
+                        \item[\textbullet] Only other available software was a Java application written in the late '90's
+                        \item[\textbullet] Clients realized a large improvement over the previous version of software
+                        \item[\textbullet] Can now $>$ 2000 caller conferences which would easily crash the previous version.
+                    \end{itemize}
+                \end{samepage}
+            \item[]
+                \begin{samepage}
+                    \textbf{Precision Dynamics International} \hfill \textbf{May 2012- September 2012} \\
+                    Contractor portal used to coordinate and invoice contracted drivers.
+                    \begin{itemize}
+                        \item[\textbullet] Utilizes Python 2.7, Django 1.4, Latex, Python-Excel, among others.
+                        \item[\textbullet] Contractors can sign on, create a profile, and create invoices that managers later approve.
+                        \item[\textbullet] Managers at PDI can search for contractors using many different criteria.
+                        \item[\textbullet] Contractor profiles and experience can be exported to a resume, or to an Excel spreadsheet.
+                        \item[\textbullet] First major client.
+                    \end{itemize}
+                \end{samepage}
+        \end{itemize}
+\end{itemize}
+
+\vspace{0.25in}
+\begin{itemize}[leftmargin=0in]
+    \item[] \textbf{PERSONAL PROJECTS} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{LeisurelyScript Game Description Language} \hfill \textbf{May 2012-Present} \\
+                    A game description language (GDL) is a computer language that describes the rules of a game.  
+                    This project was inspired by my interest in general game playing, and spurred on by the 
+                    Stanford general game playing online class.  The LeisurelyScript language draws inspiration 
+                    from Python and the language outlined in Cameron Browne's "Automatic Generation and Evaluation".  
+                    \begin{itemize}
+                        \item[\textbullet] LeisurelyScript uses Flex and Bison to generate the scanner and parser
+                        \item[\textbullet] The parser is used for the generation of a state machine expressed in C++
+                        \item[\textbullet] The C++ state machine is then compiled into dll's using g++ and maximum optimization
+                        \item[\textbullet] The state machine implements a standard API that and AI can query for required information
+                    \end{itemize}
+                \end{samepage}
+            \item[] 
+                \begin{samepage}
+                    \textbf{Bitcoin Data Collection} \hfill \textbf{December 2013-February 2014} \\
+                    This project utilizes Storm to collect streams of data from several bitcoin exchanges.  This 
+                    project's purpose was to gain experience with data collection and analysis tools.  Utilizes 
+                    Storm an open source framework for "Distributed and fault-tolerant realtime computation"
+                    \begin{itemize}
+                        \item[\textbullet] Storm uses a graph like abstraction for representing the flow of data through various analyses
+                        \item[\textbullet] Each node in Storm's graph is an algorithm, each directed edge represents algorithmic input/output
+                        \item[\textbullet] Storm is language agnostic,  nodes (aka spouts and bolts) were written in Python due familiarity.
+                        \item[\textbullet] Spouts (nodes that insert data into the graph) were written for Twitter, Mt. Gox, Btc-e, CoinBase, etc.
+                        \item[\textbullet] An analysis tool (bolt) was written to analyze when there was an opportunity for arbitrage.
+                    \end{itemize}
+                \end{samepage}
+            \item[] 
+                \begin{samepage}
+                    \textbf{Minor Projects} \hfill \textbf{December 2013-February 2014} \\
+                    I have several very small ongoing project in addtion to those listed above.
+                    \begin{itemize}
+                        \item[\textbullet] Computer controlled kegerator:  A kegerator that posts temperature readings to a database.
+                        \item[\textbullet] Sous Vide:  A method of slow cooking that uses a water bath set to a very precise temperature
+                        \item[\textbullet] Walking Desk:  A Nordictrack c2300 treadmill converted into a desk.  200 miles and counting.
+                    \end{itemize}
+                \end{samepage}
+        \end{itemize}
+\end{itemize}
+
+\begin{itemize}[leftmargin=0in]
+    \item[] \textbf{Portland State University} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{Computer Science Tutor} \hfill \textbf{2011-Present} \\
+                    College of Computer Science, Portland State University \hfill
+
+                    Mentor freshmen, sophomore, and junior students.  Help them grasp basic to intermediate level
+                    principles and techniques of computer science.	
+                    \begin{itemize}
+                        \item[\textbullet] Hosted several introductory workshops on Linux and basic Python.
+                    \end{itemize}
+                \end{samepage}
+
+            \item[] 
+                \begin{samepage}
+                    \textbf{Supportland.com} \hfill \textbf{2011-Present} \\
+                    College of Computer Science Capstone, Portland State University \hfill
+
+                    Myself and my fellow team mates were responsible for writing a wordpress plugin 
+                    for supportland.com.  My responsibilities included system administration, as 
+                    well as coding.  During the duration of this project I have learned a great
+                    deal about PHP, javascript, and web development as a whole.
+                \end{samepage}
+
+            \item[] 
+                \begin{samepage}
+
+                    \textbf{Twitter Streaming API Cache Project Lead} \hfill \textbf{2012-Present} \\
+                    College of Computer Science, Portland State University \\
+                    Github.com/cbeach/twitter\_vamp 
+
+                    I am working on a server that will passively collect public status updates from the
+                    Twitter streaming api.  These status updates will be stored so that other PSU student
+                    and myself may do natural langauge processing, semantic analysis, and datamining on
+                    a very large dataset.				
+                \end{samepage}
+
+            \item[] 
+                \begin{samepage}
+
+                    \textbf{3D Printing and Advanced Fabrication} \hfill \textbf{2010-2012} \\
+                    Open Tech-Lab, Portland State University
+
+                    I have completed an open source RepRap 3D printer. The printer started as a solo project, 
+                    but since the completion of the initial build a team has been found to assist with further 
+                    upgrades and research.  I built the RepRap from scratch.  I fabricated the structure, soldered  
+                    the electronics, and flashed the firmware. 	The goals of this project are to advance the 
+                    fields of robotic manufacturing and replication, to assist other projects at PSU, and to 
+                    provide a teaching platform for students to learn more about rapid prototyping. 
+                    More information can be found at http://projects.cecs.pdx.edu/projects/opentech-reprap. 
+                \end{samepage}
+        \end{itemize}
+\end{itemize}
+	
+\section{EDUCATION} 
+\begin{multicols}{2}
+    \textbf{Bachelor's Degree, Computer Science} \\
+    Portland State University, Portland, OR. \\
+    Graduation Date: March 2012 \\
+    \columnbreak
+    \textbf{Bachcelor of Science, Business Administration} \\
+    Oregon State University, Corvallis, OR, 
+    Graduation Date: March 2007 \\
+    Concentration: Entrepreneurship
+\end{multicols}
+
+
+\end{resume}
+\end{document}
+
+
+
+

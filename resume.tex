@@ -13,16 +13,17 @@
 \leftmargin -.5in
 
 % Center the name over the entire width of resumef:
- \moveleft.5\hoffset\centerline{\large\bf Casey M. Beach}
+\moveleft.5\hoffset\centerline{\large\bf Casey M. Beach}
 % Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{3263 SE 178th Avenue}
- \moveleft.5\hoffset\centerline{Portland, OR 97236}
- \moveleft.5\hoffset\centerline{(541) 990-8978}
- \moveleft.5\hoffset\centerline{beachc@gmail.com}
- \moveleft.5\hoffset\centerline{github.com/cbeach}
+\moveleft.5\hoffset\centerline{3263 SE 178th Avenue}
+\moveleft.5\hoffset\centerline{Portland, OR 97236}
+\moveleft.5\hoffset\centerline{(541) 990-8978}
+\moveleft.5\hoffset\centerline{beachc@gmail.com}
+\moveleft.5\hoffset\centerline{github.com/cbeach}
+
 \begin{resume}
 
 \section{EDUCATION} {\sl Current Student,} Computer Science \\
@@ -32,57 +33,90 @@
                 Oregon State University, Corvallis, OR, 
  				Graduation Date: March 2007 \\
  				Concentration: Entrepreneurship
+
+\section{OBJECTIVE} 
+    A position in a small to mid-sized company that allows me to design uncompromising
+    software systems.
  
-\section{OBJECTIVE} A position in a small company that pushes my abilities in computer science to their 
-					limits, and forces me to be the best software engineer possible.
+\section{SUMMARY OF QUALIFICATIONS} 
+    I am a very curious and well-rounded person with experience in a wide variety of areas.  I have 
+    lead several projects and participated in many others and I am currently actively pursuing 
+    projects in big data, machine learning, and robotics.  Below is a short list of my expertise and 
+    interests.
+    \begin{itemize}
+        \item Analysis of big data, namely social data provided by Twitter's streaming API
+        \item Researching novel ways to visualize and encode data for easy human consumption
+        \item Conceiving and writing solutions that utilize machine learning and artificial intelligence
+        \item Building and writing software for robotics platforms
+        \item Advanced fabrication and automation techniques
+    \end{itemize}
+
+\section{SKILLS}
+    \begin{multicol}{3}
+        \textbf{Languages}
+        \begin{itemize}
+            \item Python
+            \item JavaScript
+            \item Java
+            \item C/C++
+            \item PHP
+        \end{itemize}
+        \columnbreak
+
+        \textbf{Tools}
+        \begin{itemize}
+            \item Vim
+            \item Git
+            \item Valgrind
+            \item kCacheGrind
+            \item Eclipse
+            \item Flex and Bison
+        \end{itemize}
+        \columnbreak
+
+        \textbf{Languages and Frameworks}
+        \begin{itemize}
+            \item Django
+            \item Backbone.js
+            \item Google Analytics
+        \end{itemize}
+    \end{multicol}
 
 \section{EXPERIENCE}
-				
-				{\sl \textbf{Computer Science Tutor}} \hfill \textbf{2011-Present} \\
-                College of Computer Science, Portland State University \hfill
-				
-				Mentor freshmen, sophomore, and junior students.  Teaching them basic and intermediate 
-				computer science principles and techniques.	I've hosted several introductory workshops 
-				on using Linux, and basic Python.
+    {\sl \textbf{Computer Science Tutor}} \hfill \textbf{2011-Present} \\
+    College of Computer Science, Portland State University \hfill
 
-				{\sl \textbf{Supportland.com}} \hfill \textbf{2011-Present} \\
-                College of Computer Science Capstone, Portland State University \hfill
-				
-				Myself and my fellow team mates were responsible for writing a wordpress plugin 
-				for supportland.com.  My responsibilities included system administration, as 
-				well as coding.  During the duration of this project I have learned a great
-				deal about PHP, javascript, and web development as a whole.
+    Mentor freshmen, sophomore, and junior students.  Teaching them basic and intermediate 
+    computer science principles and techniques.	I've hosted several introductory workshops 
+    on using Linux, and basic Python.
 
-				{\sl \textbf{Aerial Vehicles Team}}\hfill \textbf{2012-Present} \\
-				College of Computer Science, Portland State University
+    {\sl \textbf{Supportland.com}} \hfill \textbf{2011-Present} \\
+    College of Computer Science Capstone, Portland State University \hfill
 
-				I joined the Aerial Vehicle Team at PSU to participate in a cutting edge robotics
-				competition.  I will be working on the visual systems that will help the AVT's quad-
-				copter navigate.  This system will have several parts.  The first will be a machine
-				learning program that performs photo opticle character recognition.  The second will
-				be a vision system that will identify objects that need to be avoided.  Finally it 
-				will require navigation software that will allow it to identify and avoid obsticles
-				while flying quickly through a hallway.
+    Myself and my fellow team mates were responsible for writing a wordpress plugin 
+    for supportland.com.  My responsibilities included system administration, as 
+    well as coding.  During the duration of this project I have learned a great
+    deal about PHP, javascript, and web development as a whole.
 
-				{\sl \textbf{Twitter Streaming API Cache Project Lead}} \hfill \textbf{2012-Present} \\
-				College of Computer Science, Portland State University \\
-				Github.com/cbeach/twitter\_vamp 
+    {\sl \textbf{Twitter Streaming API Cache Project Lead}} \hfill \textbf{2012-Present} \\
+    College of Computer Science, Portland State University \\
+    Github.com/cbeach/twitter\_vamp 
 
-				I am working on a server that will passively collect public status updates from the
-				Twitter streaming api.  These status updates will be stored so that other PSU student
-				and myself may do natural langauge processing, semantic analysis, and datamining on
-				a very large dataset.				
+    I am working on a server that will passively collect public status updates from the
+    Twitter streaming api.  These status updates will be stored so that other PSU student
+    and myself may do natural langauge processing, semantic analysis, and datamining on
+    a very large dataset.				
 
-				{\sl \textbf{3D Printing and Advanced Fabrication}} \hfill \textbf{2010-2012} \\
-                Open Tech-Lab, Portland State University
-				
-				I have completed an open source RepRap 3D printer. The printer started as a solo project, 
-				but since the completion of the initial build a team has been found to assist with further 
-				upgrades and research.  I built the RepRap from scratch.  I fabricated the structure, soldered  
-				the electronics, and flashed the firmware. 	The goals of this project are to advance the 
-				fields of robotic manufacturing and replication, to assist other projects at PSU, and to 
-				provide a teaching platform for students to learn more about rapid prototyping. 
-				More information can be found at http://projects.cecs.pdx.edu/projects/opentech-reprap. 
+    {\sl \textbf{3D Printing and Advanced Fabrication}} \hfill \textbf{2010-2012} \\
+    Open Tech-Lab, Portland State University
+
+    I have completed an open source RepRap 3D printer. The printer started as a solo project, 
+    but since the completion of the initial build a team has been found to assist with further 
+    upgrades and research.  I built the RepRap from scratch.  I fabricated the structure, soldered  
+    the electronics, and flashed the firmware. 	The goals of this project are to advance the 
+    fields of robotic manufacturing and replication, to assist other projects at PSU, and to 
+    provide a teaching platform for students to learn more about rapid prototyping. 
+    More information can be found at http://projects.cecs.pdx.edu/projects/opentech-reprap. 
 	
 
 \end{resume}

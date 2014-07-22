@@ -362,7 +362,7 @@
 		       % go into vertical mode; add some negative glue 
 		       % to give a box of 0pt height and depth
     }%
-  }%
+  }% 
   \addpenalty{-\@secpenalty} % this would be a bad place for a page break
   \vskip-\baselineskip % when the next box is processed, baselineskip glue
 		       % glue will be added (the box has no depth because of
@@ -429,6 +429,8 @@
     \vskip-\parskip
   \fi
   \ignorespaces
+  \medskip
+  \moveleft\hoffset\vbox{\hrule width \resumewidth height 0.75pt}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
