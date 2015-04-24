@@ -85,7 +85,8 @@
     \item[] 
         \textbf{Nike Dreams: Senior Application Engineer} \hfill \textbf{September 2014-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
         The Dreams project aims to bring near-real time monitoring and analytics to Nike. It heavily utilizes the NetflixOSS stack for managing
-        AWS and several apache tools for stream processing. Finally, it uses both Couchbase and the ELK stack for storage, search, and visualization.
+        AWS and several apache tools for stream processing. Finally, it uses both Couchbase and the ELK (Elasticsearch, Logstash, Kibana) 
+        stack for storage, search, and visualization.
         \vspace{0.125in}
         \begin{itemize}[leftmargin=0in]
             \item[] 
@@ -94,25 +95,19 @@
                     Dream Walker is a Java application designed to replay data into the Dreams pipeline. It is used for
                     data recovery and replay.
                     \begin{itemize}
-                        \item[\textbullet] Allows replay and recovery from s3 buckets.
-                        \item[\textbullet] Users can specify a date range, Dream Walker will retrieve the corresponding objects and stream the sequentially into Kafka
+                        \item[\textbullet] Allows users to recover data from a specific date range.
+                        \item[\textbullet] Allows users to replay interesting data.
+                        \item[\textbullet] Data is fed into the system in a way consistent with normal data processing
                     \end{itemize}
                 \end{samepage}
                 \begin{samepage}
                     \textbf{Elasticsearch, Logstash, Kibana} \hfill \textbf{September 2014-Present} \\
-                    We are using the ELK stack for search and visualization.
+                    We are using the ELK stack for search and visualization. This allows business users to explore and understand the data which is being collected.
                     \begin{itemize}
-                        \item[\textbullet] Authored a Kibana 4 sidecar which allows monitoring of kibana. 
-                        \item[\textbullet] Deployed Kibana 4, allowing business users to visuallize near real time data.
+                        \item[\textbullet] Authored a Kibana 4 sidecar which gives the kibana server access to the NetflixOSS stack. 
+                        \item[\textbullet] Allowed business users to visuallize near real time data by deploying and managing an ELK stack
                         \item[\textbullet] Elasticsearch and kibana has allowed business users to search and visualize traffic to Nike.com in near real time
-                    \end{itemize}
-                \end{samepage}
-                \begin{samepage}
-                    \textbf{Spark} \hfill \textbf{September 2014-Present} \\
-                    Spark streaming is used for data enrichment, active session tracking, stream connectors for Couchbase  
-                    and Elasticsearch, and finally bot detection.
-                    \begin{itemize}
-                        \item[\textbullet] Spark details here
+                        \item[\textbullet] Facilitate rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
                     \end{itemize}
                 \end{samepage}
         \end{itemize}
