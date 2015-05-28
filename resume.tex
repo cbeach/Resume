@@ -24,13 +24,9 @@
 
 \section{SUMMARY OF QUALIFICATIONS} 
     I have lead several projects and participated in many others. In my personal life, my projects are 
-    chosen based on marketability and difficulty. My preference is for massive, difficult projects that 
-    have a great deal of utility and marketability. These most often involve some form of data 
+    chosen based on marketability and difficulty. My preference is for massive, difficult projects have 
+    a great deal of utility. These most often involve some form of data 
     collection/analysis or cutting edge AI.
-    
-    My professional experience has included a wide range of technologies and solutions.  These include
-    e-commerce, data analysis, telecommunication, and more. I was recently given the title of lead developer and 
-    the opportunity to mentor a recent college graduate.
     
     I am currently actively pursuing projects in big data, machine learning, and AI.  Below is a short 
     list of my expertise and interests.  
@@ -48,8 +44,8 @@
             \item Python
             \item JavaScript
             \item Java
+            \item Scala
             \item C/C++
-            \item PHP
         \end{itemize}
         \columnbreak
 
@@ -60,17 +56,21 @@
             \item Valgrind
             \item kCacheGrind
             \item Eclipse
+            \item Elasticsearch
+            \item Logstash
+            \item Kibana
+            \item AWS (EC2, EMR, S3)
         \end{itemize}
         \columnbreak
 
         \textbf{Libraries and Frameworks}
         \begin{itemize}
-            \item Flex/Bison
-            \item Storm
-            \item Python Pandas
+            \item NetflixOSS
+            \item Apache Spark
             \item Django
             \item Python Twisted
-            \item Google Analytics
+            \item Python Pandas
+            \item Flask \& SQLAlchemy
         \end{itemize}
     \end{multicols}
 
@@ -78,32 +78,87 @@
 \vspace{0.125in}
 
 \begin{itemize}[leftmargin=0in]
-    \item[] \textbf{PERSONAL PROJECTS} \\[-0.1in] \rule{\textwidth}{0.5pt}
+    \item[] 
+        \textbf{Nike Dreams: Senior Application Engineer} \hfill \textbf{September 2014-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        The Dreams project aims to bring near-real time monitoring and analytics to Nike. It heavily utilizes the NetflixOSS stack for managing
+        AWS and several apache tools for stream processing. Finally, it uses both Couchbase and the ELK (Elasticsearch, Logstash, Kibana) 
+        stack for storage, search, and visualization.
+        \vspace{0.125in}
+        \item[] 
+            \begin{samepage}
+                \textbf{Dream Walker} \hfill \textbf{September 2014-Present} \\
+                Dream Walker is a Java application designed to replay data into the Dreams pipeline. It is used for
+                data recovery and replay.
+                \begin{itemize}
+                    \item[\textbullet] Allows users to recover data from a specific date range
+                    \item[\textbullet] Allows users to replay interesting data
+                    \item[\textbullet] Data is fed into the system in a way consistent with normal data processing
+                \end{itemize}
+            \end{samepage}
+            \vspace{0.125in}
+        \item[] 
+            \begin{samepage}
+                \textbf{Elasticsearch, Logstash, Kibana} \hfill \textbf{September 2014-Present} \\
+                We are using the ELK stack for search and visualization. This allows business users to explore and understand the data which is being collected.
+                \begin{itemize}
+                    \item[\textbullet] Authored a Kibana 4 sidecar which gives the Kibana server access to the NetflixOSS stack
+                    \item[\textbullet] Allowed business users to visuallize near real time data by deploying and managing an ELK stack
+                    \item[\textbullet] Elasticsearch and Kibana has allowed business users to search and visualize traffic to Nike.com in near real time
+                    \item[\textbullet] Facilitate rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
+                \end{itemize}
+            \end{samepage}
+\end{itemize}
+\vspace{0.25in}
+
+\begin{itemize}[leftmargin=0in]
+    \item[] 
+        \textbf{PARTHENON SOFTWARE: Lead Software Developer} \hfill \textbf{December 2013-August 2014} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        Parthenon specializes in custom software. I have completed projects on a wide variety of technologies including basic 
+        web development, telecommunications software, order fulfillment, and others. \vspace{0.125in}
         \begin{itemize}[leftmargin=0in]
             \item[] 
                 \begin{samepage}
-                    \textbf{Bitcoin/Twitter Data Collection} \hfill \textbf{December 2013-February 2014} \\
-                    This project collects streams of data from Twitter and several bitcoin exchanges with Storm. Storm is an open 
-                    source framework for "Distributed and fault-tolerant real-time computation", that is language agnostic,
-                    guarantees delivery, and is easily distributed over clusters of any size. This project's purpose was to gain experience
-                    with data collection and analysis tools. 
+                    \textbf{Feedback Innovations} \hfill \textbf{December 2013-August 2014} \\
+                    Feedback Innovations is a company that collects customer satisfaction data for medical transport. Their original site 
+                    used PHP and was not extensible.  An updated version was written in Python and used another sub-contractor Parthenon 
+                    was hired to salvage the second version.
                     \begin{itemize}
-                        \item[\textbullet] Storm uses a graph like abstraction for representing the flow of data through various analyses
-                        \item[\textbullet] Nodes in Storm's graph represent an algorithm, directed edges represent data flow between algoritms
-                        \item[\textbullet] Storm is language agnostic, nodes in this project were written in Python due to familiarity.
-                        \item[\textbullet] Collection code was written for Twitter, Mt. Gox, Btc-e, CoinBase, and other exchanges
-                        \item[\textbullet] A graph analysis tool was written for arbitrage analysis.
+                        \item[\textbullet] Advised Jon Hance (project manager) and Joe Stepp (developer) on refactoring and estimates
+                        \item[\textbullet] Optimized report generation. Large reports no longer crash the server
+                        \item[\textbullet] Completely re-wrote the CSV user import tool. It is more powerful, stable, and extensible, with
+                                           less than half the code
+                    \end{itemize}
+                \end{samepage}
+        \end{itemize}
+\end{itemize}
+\vspace{0.25in}
+
+\begin{itemize}[leftmargin=0in]
+    \item[] \textbf{Artificial Inteligence, Machine Learning, Genetic Programming, and Computer Vision} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
+                    This work in progress is an attempt to implement the Atari playing, deep learning AI from Deep Mind. Deep Thought uses computer vision to isolate game artifacts and 
+                    sprites from the NES. The goal is to vastly reduce the size of the input layer that a naive implementation of DeepMind would require. 
+                    This will improve both the speed of learning, and the quality of the final neural network.
+                    \begin{itemize}
+                        \item[\textbullet] Analyzes NES games using computer vision and machine learning
+                        \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
+                        \item[\textbullet] Extract sprites for player and non-player characters (PC, NPC respecitvely)
+                        \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
+                        \item[\textbullet] Perform optical character recognition to extract textual information from individual frames
                     \end{itemize}
                 \end{samepage}
             \item[] 
                 \begin{samepage}
                     \textbf{LeisurelyScript Game Description Language} \hfill \textbf{May 2012-Present} \\
-                    A game description language (GDL) is a computer language that describes the rules of games. 
-                    This project was inspired by an interest in machine learning and AI, and has been spurred on by the 
+                    A game description language (GDL) is a computer language that describes the rules of a game. 
+                    This project was inspired by my interest in machine learning and AI. It has been spurred on by the 
                     Stanford general game playing MOOC. The ultimate goal is to explore the properties that make a game
-                    fun, and to use those properties for the evaluation of new games produced using genetic programming techniques. 
-                    The LeisurelyScript language draws heavily from the language outlined in Cameron Browne's 
-                    "Automatic Generation and Evaluation".
+                    fun for use in evaluation of new games produced using genetic programming techniques. 
+                    The LeisurelyScript language draws heavily from the language 
+                    outlined in Cameron Browne's "Automatic Generation and Evaluation".
                     \begin{itemize}
                         \item[\textbullet] LeisurelyScript uses Flex and Bison to generate the scanner and parser
                         \item[\textbullet] The compiler is used for the generation of a state machine expressed in C++
@@ -114,78 +169,6 @@
         \end{itemize}
 \end{itemize}
 \vspace{0.25in}
-
-\begin{itemize}[leftmargin=0in]
-    \item[] \textbf{Nike DREAMS Project: Application Engineer} \\[-0.1in] \rule{\textwidth}{0.5pt}
-        \begin{itemize}[leftmargin=0in]
-            \item[] 
-                \begin{samepage}
-                    \textbf{} \hfill \textbf{September 2014-Present 2014} \\
-                    The DREAMS project aims to bring real time analytics in house at Nike. It uses a microservice architecture to achieve very fast processing time. It utilizes AWS and the NetflixFloss stack.
-                    \begin{itemize} I am owner of DreamWalker, a microservice that rapidly streams data out of S3 and directly into kafka.
-                        \item[\textbullet] 
-                    \end{itemize}
-                \end{samepage}
-        \end{itemize}
-\end{itemize}
-\vspace{0.25in}
-
-\begin{itemize}[leftmargin=0in]
-    \item[] 
-        \textbf{PARTHENON SOFTWARE: Lead Software Developer} \hfill \textbf{December 2013-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
-        Parthenon specializes in custom software. I have completed projects on a wide variety of technologies including basic 
-        web development, telecommunications software, order fulfillment, and others. \vspace{0.125in}
-        \begin{itemize}[leftmargin=0in]
-            \item[] 
-                \begin{samepage}
-                    \textbf{Feedback Innovations} \hfill \textbf{December 2013-Present} \\
-                    Feedback Innovations is a company that collects customer satisfaction data for medical transport. Their original site 
-                    used PHP and was not extensible.  An updated version was written in Python and used another sub-contractor Parthenon 
-                    was hired to salvage the second version.
-                    \begin{itemize}
-                        \item[\textbullet] Advised Jon Hance (project manager) and Joe Stepp (developer) on refactoring and estimates
-                        \item[\textbullet] Optimized report generation. Large reports no longer crash the server.
-                        \item[\textbullet] Completely re-wrote the CSV user import tool. It is more powerful, stable, and extensible, with
-                                           less than half the code.
-                    \end{itemize}
-                \end{samepage}
-        \end{itemize}
-        \vspace{0.125in}
-    \item[] 
-        \textbf{PARTHENON SOFTWARE: Software Developer} \hfill \textbf{April 2012-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
-        \begin{itemize}[leftmargin=0in]
-            \item[] 
-                \begin{samepage}
-                    \textbf{Avaya Bridge Conferencing} \hfill \textbf{July 2012-December 2013} \\
-                    Monitoring and control software for Spectel teleconferencing bridges. I was the sole developer for much of the early project.
-                    \begin{itemize}
-                        \item[\textbullet] Utilizes Python Twisted, Django 1.4, Bridge communication API, web sockets, non-blocking IO
-                        \item[\textbullet] Heavily concurrent. Uses concurrent event driven code to perform tasks.
-                        \item[\textbullet] Most communication happens over web-sockets and uses Python Twisted to serve them.
-                        \item[\textbullet] Developed an RPC framework for twisted web sockets that works well with the Django ORM
-                        \item[\textbullet] An event driven Java server handles communication over multiple bridges
-                        \item[\textbullet] Only other available software was a Java application written in the late '90's
-                        \item[\textbullet] Clients realized a large improvement over the previous version of software
-                        \item[\textbullet] Can now handle $>$ 2000 caller conferences which would easily crash the previous version.
-                    \end{itemize}
-                \end{samepage}
-        \end{itemize}
-\end{itemize}
-\vspace{0.25in}
-
-\section{EDUCATION} 
-\begin{multicols}{2}
-    \textbf{Bachelor's Degree, Computer Science} \\
-    Portland State University, Portland Oregon. \\
-    Graduation Date: March 2012 \\
-
-    \columnbreak
-    \textbf{Bachcelor's Degree , Business Admin.} \\
-    Oregon State University, Corvallis Oregon, \\
-    Graduation Date: March 2007 \\
-    Concentration: Entrepreneurship
-\end{multicols}
-
 
 \end{resume}
 \end{document}
