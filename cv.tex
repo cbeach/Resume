@@ -240,9 +240,16 @@
             \item[] 
                 \begin{samepage}
                     \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
+<<<<<<< Updated upstream
                     This work in progress is an attempt to implement the Atari playing, deep learning AI from Deep Mind. Deep Thought uses computer vision to isolate game artifacts and 
                     sprites from the NES. The goal is to vastly reduce the size of the input layer that a naive implementation of DeepMind would require. 
                     This will improve both the speed of learning, and the quality of the final neural network.
+=======
+                    This work is an attempt to implement computer vision tools to isolate game artifacts and 
+                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool that automatically 
+                    reverse engineer games.  The goal is to vastly reduce the size of the input layer that a naive implementation of 
+                    DeepMind would require.  This will improve both the speed of learning, and the quality of the final neural network.
+>>>>>>> Stashed changes
                     \begin{itemize}
                         \item[\textbullet] Analyzes NES games using computer vision and machine learning
                         \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
@@ -261,10 +268,12 @@
                     The LeisurelyScript language draws heavily from the language 
                     outlined in Cameron Browne's "Automatic Generation and Evaluation".
                     \begin{itemize}
-                        \item[\textbullet] LeisurelyScript uses Flex and Bison to generate the scanner and parser
-                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in C++
-                        \item[\textbullet] The C++ state machine is then compiled into dll's using g++
+                        \item[\textbullet] LeisurelyScript uses Scala compiler macros to parse my extension to the language 
+                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in Scala 
                         \item[\textbullet] The state machine implements a standard API that an AI can query for required information
+                        \item[\textbullet] The state machine will then be fed into a WIP evaluation and genetic prgramming framework
+                        \item[\textbullet] The end goal of this is to produce a ML ecosystem that is capable of randomly generating game rules
+
                     \end{itemize}
                 \end{samepage}
 \end{itemize}
