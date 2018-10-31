@@ -22,21 +22,6 @@
 
 \begin{resume}
 
-\section{SUMMARY OF QUALIFICATIONS} 
-    I have lead several projects and participated in many others. In my personal life, my projects are 
-    chosen based on marketability and difficulty. My preference is for massive, difficult projects have 
-    a great deal of utility. These most often involve some form of data 
-    collection/analysis or cutting edge AI.
-    
-    I am currently actively pursuing projects in big data, machine learning, and AI.  Below is a short 
-    list of my expertise and interests.  
-
-    \begin{itemize}
-        \item Data analysis and collection, particularly Twitter's streaming API and BitCoin market data
-        \item Researching novel ways to visualize and encode data for easy human consumption
-        \item Conceiving and writing solutions that utilize machine learning and artificial intelligence
-    \end{itemize}
-
 \section{SKILLS}
     \begin{multicols}{3}
         \textbf{Languages}
@@ -83,29 +68,15 @@
         Cambia is currently working on a migration to the cloud. As part of the CloudFirst initiative I have had an opportunity to add value to all aspects of 
         the migration from on-prem to AWS based infrastructure.
         \vspace{0.125in}
-        % META: begin.section.experience.cambia.triggered
-        \item[] 
-            \begin{samepage}
-                \textbf{Triggered Campaigns} \hfill \textbf{June 2017-Present} \\
-                Triggered campaigns give the marketing department a first class interface into a high capacity email pipeline.
-                \begin{itemize}
-                    \item[\textbullet] Integrated logging and error pipeline using an ELK stack
-                    \item[\textbullet] EMR jobs are triggered by PUT events on an S3 bucket
-                    \item[\textbullet] A series of node based dockerized microservices then handles validating messages
-                    \item[\textbullet] Integration of elastic beats agents to collect logs and system metrics
-                \end{itemize}
-            \end{samepage}
-            \vspace{0.125in}
-        % META: end.section.experience.cambia.triggered
         % META: begin.section.experience.cambia.ci_cd_pipeline
         \item[] 
             \begin{samepage}
                 \textbf{CI/CD Pipeline} \hfill \textbf{October 2016-Present} \\
                 I designed our CI/CD pipeline to give my team a stable baseline for my our HIPPA compliant docker based infrastructure.
                 \begin{itemize}
-                    \item[\textbullet] Ansible IAC for baking and deploying ec2 instances
+                    \item[\textbullet] Designed and wrote Ansible IAC for baking and deploying ec2 instances
                     \item[\textbullet] First team in Cambia to deploy dockerized services to production
-                    \item[\textbullet] All microservices are run in docker containers
+                    \item[\textbullet] Designed the system so that all microservices are run in docker containers
                     \item[\textbullet] Gitlab Ci for building containers and NPM modules
                     \item[\textbullet] A linkerD POC service mesh is currently being investigated
                 \end{itemize}
@@ -144,7 +115,7 @@
                     Dream Walker is a Java application designed to replay data into the Dreams pipeline. It is used for
                     data recovery and replay.
                     \begin{itemize}
-                        \item[\textbullet] Allows users to recover data from a specific date range
+                        \item[\textbullet] Designed the application to allow users to recover data from specific date ranges
                         \item[\textbullet] Allows users to replay interesting data
                         \item[\textbullet] Data is fed into the system in a way consistent with normal data processing
                     \end{itemize}
@@ -154,9 +125,9 @@
                     We are using the ELK stack for search and visualization. This allows business users to explore and understand the data which is being collected.
                     \begin{itemize}
                         \item[\textbullet] Authored a Kibana 4 sidecar which gives the Kibana server access to the NetflixOSS stack
-                        \item[\textbullet] Allowed business users to visuallize near real time data by deploying and managing an ELK stack
-                        \item[\textbullet] Elasticsearch and Kibana has allowed business users to search and visualize traffic to Nike.com in near real time
-                        \item[\textbullet] Facilitate rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
+                        \item[\textbullet] Deployed and managed an ELK stack that allowed business users to visuallize near real time data
+                        \item[\textbullet] Allowed business users to search and visualize traffic to Nike.com in near real time by utilizing Elasticsearch and Kibana 
+                        \item[\textbullet] Facilitated rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
                     \end{itemize}
                 \end{samepage}
         \end{itemize}
@@ -240,16 +211,9 @@
             \item[] 
                 \begin{samepage}
                     \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
-<<<<<<< Updated upstream
-                    This work in progress is an attempt to implement the Atari playing, deep learning AI from Deep Mind. Deep Thought uses computer vision to isolate game artifacts and 
-                    sprites from the NES. The goal is to vastly reduce the size of the input layer that a naive implementation of DeepMind would require. 
-                    This will improve both the speed of learning, and the quality of the final neural network.
-=======
                     This work is an attempt to implement computer vision tools to isolate game artifacts and 
-                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool that automatically 
-                    reverse engineer games.  The goal is to vastly reduce the size of the input layer that a naive implementation of 
-                    DeepMind would require.  This will improve both the speed of learning, and the quality of the final neural network.
->>>>>>> Stashed changes
+                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
+                    reverse engineering games.
                     \begin{itemize}
                         \item[\textbullet] Analyzes NES games using computer vision and machine learning
                         \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
@@ -264,7 +228,7 @@
                     A game description language (GDL) is a computer language that describes the rules of a game. 
                     This project was inspired by my interest in machine learning and AI. It has been spurred on by the 
                     Stanford general game playing MOOC. The ultimate goal is to explore the properties that make a game
-                    fun for use in evaluation of new games produced using genetic programming techniques. 
+                    fun, which can be used for the evaluation of new games produced using genetic programming techniques. 
                     The LeisurelyScript language draws heavily from the language 
                     outlined in Cameron Browne's "Automatic Generation and Evaluation".
                     \begin{itemize}
