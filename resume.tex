@@ -19,35 +19,16 @@
 \hbox to \textwidth{\hfil beachc@gmail.com\hfil}
 \hbox to \textwidth{\hfil github.com/cbeach\hfil}
 
-
 \begin{resume}
-
-% META: begin.section.skills
 \section{SKILLS}
-    \begin{multicols}{4}
+    \begin{multicols}{3}
         \textbf{Languages}
         \begin{itemize}
             \item Python
-            \item Ansible
             \item Node/JavaScript
             \item Java
             \item C/C++
             \item Scala
-        \end{itemize}
-        \columnbreak
-
-        \textbf{AWS}
-        \begin{itemize}
-            \item EC2 
-            \item ECS 
-            \item Lambda 
-            \item EMR 
-            \item S3 
-            \item DynamoDB
-            \item Route53
-            \item SNS
-            \item CodeCommit
-            \item CodeDeploy
         \end{itemize}
         \columnbreak
 
@@ -57,58 +38,56 @@
             \item Git
             \item Valgrind
             \item kCacheGrind
+            \item AWS (EC2, ECS, Lambda, EMR, S3, DynamoDB)
             \item Docker
+            \item Rancher
             \item ELK Stack
-            \item LinkerD
-            \item NamerD
         \end{itemize}
         \columnbreak
 
-        \textbf{Frameworks}
+        \textbf{Libraries and Frameworks}
         \begin{itemize}
-            \item Node.js
             \item NetflixOSS
             \item Apache Spark
             \item Django
+            \item Python Twisted
+            \item Python Pandas
+            \item Node.js
             \item Flask \& SQLAlchemy
         \end{itemize}
     \end{multicols}
-% META: end.section.skills
 
-% META: begin.section.experience
 \section{EXPERIENCE}
 \vspace{0.125in}
 
-% META: begin.section.experience.cambia
 \begin{itemize}[leftmargin=0in]
     \item[] 
         \textbf{Cambia Health Solutions: Senior Application Engineer III} \hfill \textbf{February 2016-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
-        Cambia is currently working on a migration to the cloud. As part of the CloudFirst initiative I have had an opportunity to add value to all aspects of 
-        the migration from on-prem to AWS based infrastructure.
+        %TODO: This needs more work
+        As part of Cambia's ongoing migration to the clound I have had an opportunity to add value to all aspects of our tech stack.
         \vspace{0.125in}
-        % META: begin.section.experience.cambia.triggered
         \item[] 
             \begin{samepage}
-                \textbf{Triggered Campaigns} \hfill \textbf{June 2017-Present} \\
-                Triggered campaigns give the marketing department a first class interface into a high capacity email pipeline.
+                \textbf{Juno Migration} \hfill \textbf{October 2016-Present} \\
+                Juno is a new aws account/environment with better amenities and more "handrails" to help developers deploy their code. 
+                A lot of work is required to migrate our tools and services to the new environment. I was chosen to be my team's lead 
+                lead in this effort and have been deprecating old, incompatible services in preparation for this effort.
                 \begin{itemize}
-                    \item[\textbullet] Integrated logging and error pipeline using an ELK stack
-                    \item[\textbullet] EMR jobs are triggered by PUT events on an S3 bucket
-                    \item[\textbullet] A series of node based dockerized microservices then handles validating messages
-                    \item[\textbullet] Integration of elastic beats agents to collect logs and system metrics
+                    \item[\textbullet] Deprecating very old and incompatible services
+                    \item[\textbullet] Designed a cutting edge service mesh based on envoy and the aws elastic kubernetes service
+                    \item[\textbullet] In the process of refactoring old foundational libraries/modules to make use of new infrastructure features 
                 \end{itemize}
             \end{samepage}
             \vspace{0.125in}
-        % META: end.section.experience.cambia.triggered
         % META: begin.section.experience.cambia.ci_cd_pipeline
         \item[] 
             \begin{samepage}
                 \textbf{CI/CD Pipeline} \hfill \textbf{October 2016-Present} \\
                 I designed our CI/CD pipeline to give my team a stable baseline for my our HIPPA compliant docker based infrastructure.
                 \begin{itemize}
-                    \item[\textbullet] Ansible IAC for baking and deploying ec2 instances
+                    \item[\textbullet] Designed and wrote Ansible IAC for baking and deploying ec2 instances
                     \item[\textbullet] First team in Cambia to deploy dockerized services to production
-                    \item[\textbullet] All microservices are run in docker containers
+                    \item[\textbullet] Designed the system so that all microservices are run in docker containers
                     \item[\textbullet] Gitlab Ci for building containers and NPM modules
                     \item[\textbullet] A linkerD POC service mesh is currently being investigated
                 \end{itemize}
@@ -119,7 +98,7 @@
         \item[] 
             \begin{samepage}
                 \textbf{Consumer Profile Settings} \hfill \textbf{February 2016-March 2016} \\
-                Consumer profile settings (CPS) stores member information in a HIPAA compliant manner.
+                I helped design and implement our Consumer profile settings (CPS) project to store member information and preferences in a HIPAA compliant manner.
                 \begin{itemize}
                     \item[\textbullet] Stores HIPAA PII and PHI in searchable encrypted dynamoDB tables
                     \item[\textbullet] NodeJS based services are built and deployed as docker containers
@@ -132,9 +111,7 @@
         % META: end.section.experience.cambia.cps
 \end{itemize}
 \vspace{0.25in}
-% META: end.section.experience.cambia
 
-% META: begin.section.experience.Nike
 \begin{itemize}[leftmargin=0in]
     \item[] 
         \textbf{Nike Dreams: Senior Application Engineer} \hfill \textbf{September 2014-June 2015} \\[-0.1in] \rule{\textwidth}{0.5pt}
@@ -144,89 +121,79 @@
         \vspace{0.125in}
         \begin{itemize}[leftmargin=0in]
             \item[] 
-                % META: begin.section.experience.nike.dream_walker
                 \begin{samepage}
                     \textbf{Dream Walker} \hfill \textbf{September 2014-June 2015} \\
                     Dream Walker is a Java application designed to replay data into the Dreams pipeline. It is used for
                     data recovery and replay.
                     \begin{itemize}
-                        \item[\textbullet] Allows users to recover data from a specific date range
+                        \item[\textbullet] Designed the application to allow users to recover data from specific date ranges
                         \item[\textbullet] Allows users to replay interesting data
                         \item[\textbullet] Data is fed into the system in a way consistent with normal data processing
                     \end{itemize}
                 \end{samepage}
-                % META: end.section.experience.nike.dream_walker
-                % META: begin.section.experience.nike.elk
                 \begin{samepage}
                     \textbf{Elasticsearch, Logstash, Kibana} \hfill \textbf{September 2014-June 2015} \\
                     We are using the ELK stack for search and visualization. This allows business users to explore and understand the data which is being collected.
                     \begin{itemize}
                         \item[\textbullet] Authored a Kibana 4 sidecar which gives the Kibana server access to the NetflixOSS stack
-                        \item[\textbullet] Allowed business users to visuallize near real time data by deploying and managing an ELK stack
-                        \item[\textbullet] Elasticsearch and Kibana has allowed business users to search and visualize traffic to Nike.com in near real time
-                        \item[\textbullet] Facilitate rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
+                        \item[\textbullet] Deployed and managed an ELK stack that allowed business users to visuallize near real time data
+                        \item[\textbullet] Allowed business users to search and visualize traffic to Nike.com in near real time by utilizing Elasticsearch and Kibana 
+                        \item[\textbullet] Facilitated rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
                     \end{itemize}
                 \end{samepage}
-                % META: end.section.experience.nike.elk
         \end{itemize}
 \end{itemize}
 \vspace{0.25in}
-% META: begin.section.experience.Nike
 
-% META: begin.section.experience.apind
 \begin{itemize}[leftmargin=0in]
     \item[] \textbf{Accident Prone Industries} \\[-0.1in] \rule{\textwidth}{0.5pt}
-    Accident Prone Industries is a banner name for several related projects that I have been working on for several years.
         \begin{itemize}[leftmargin=0in]
-            % META: begin.section.experience.apind.gaas
             \item[] 
                 \begin{samepage}
-                    \textbf{Gaming as a Service: GaaS} \hfill \textbf{May 2012-Present} \\
-                    Gaming as a Service provides a media server experience for friends and family. The emulators are instrumented such that 
-                    video output and controller state are saved for future analysis.
+                    \textbf{Segmentum Solar} \hfill \textbf{April 2018-Present} \\
+                    This project aims to provide enough horsepower for my other ML projects. The list of hardware and service inventory that I've assemled follows.
                     \begin{itemize}
-                        \item[\textbullet] Instrumented emulation for use by friends and family.
-                        \item[\textbullet] Uses gRPC for highly portable and documented api's
+                        \item[\textbullet] A 40 core Dell r810 with 256 GB of RAM
+                        \item[\textbullet] A home built Intel i9 with 48 GB of RAM and a GTX 1080 TI
+                        \item[\textbullet] A 8 core Dell r410 intended for use as a virtual router/gateway.
+                        \item[\textbullet] A Synology DS718+ 8TB NAS
+                        \item[\textbullet] A bare metal depoyment of Kubernetes with the helm package manager.
                     \end{itemize}
                 \end{samepage}
-            % META: end.section.experience.apind.gaas
-            % META: begin.section.experience.apind.deep_thought
             \item[] 
                 \begin{samepage}
                     \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
                     This work is an attempt to implement computer vision tools to isolate game artifacts and 
-                    sprites from the NES using Apache Spark, and finally to extend the Deep Mind reinforcement Neural network to the NES. 
-                    The goal is to vastly reduce the size of the input layer that a naive implementation of DeepMind would require. 
-                    This will improve both the speed of learning, and the quality of the final neural network.
+                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
+                    reverse engineering games.
                     \begin{itemize}
-                        \item[\textbullet] Automatically extract sprites from live play sessions
                         \item[\textbullet] Analyzes NES games using computer vision and machine learning
+                        \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
+                        \item[\textbullet] Extract sprites for player and non-player characters (PC, NPC respecitvely)
                         \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
+                        \item[\textbullet] Perform optical character recognition to extract textual information from individual frames
                     \end{itemize}
                 \end{samepage}
-            % META: end.section.experience.apind.deep_thought
-            % META: begin.section.experience.apind.leisurely_script
             \item[] 
                 \begin{samepage}
                     \textbf{LeisurelyScript Game Description Language} \hfill \textbf{May 2012-Present} \\
                     A game description language (GDL) is a computer language that describes the rules of a game. 
                     This project was inspired by my interest in machine learning and AI. It has been spurred on by the 
                     Stanford general game playing MOOC. The ultimate goal is to explore the properties that make a game
-                    fun for use in evaluation of new games produced using genetic programming techniques. 
+                    fun, which can be used for the evaluation of new games produced using genetic programming techniques. 
                     The LeisurelyScript language draws heavily from the language 
                     outlined in Cameron Browne's "Automatic Generation and Evaluation".
                     \begin{itemize}
-                        \item[\textbullet] LeisurelyScript uses Flex and Bison to generate the scanner and parser
-                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in C++
-                        \item[\textbullet] The C++ state machine is then compiled into dll's using g++
+                        \item[\textbullet] LeisurelyScript uses Scala compiler macros to parse my extension to the language 
+                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in Scala 
                         \item[\textbullet] The state machine implements a standard API that an AI can query for required information
+                        \item[\textbullet] The state machine will then be fed into a WIP evaluation and genetic prgramming framework
+                        \item[\textbullet] The end goal of this is to produce a ML ecosystem that is capable of randomly generating game rules
+
                     \end{itemize}
                 \end{samepage}
-            % META: end.section.experience.apind.leisurely_script
         \end{itemize}
 \end{itemize}
-% META: end.section.experience.apind
-
 
 \end{resume}
 \end{document}
