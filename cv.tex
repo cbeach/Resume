@@ -25,6 +25,7 @@
         \textbf{Languages}
         \begin{itemize}
             \item Python
+            \item Go
             \item Node/JavaScript
             \item Java
             \item C/C++
@@ -47,10 +48,10 @@
 
         \textbf{Libraries and Frameworks}
         \begin{itemize}
+            \item Go echo
             \item NetflixOSS
             \item Apache Spark
             \item Django
-            \item Python Twisted
             \item Python Pandas
             \item Node.js
             \item Flask \& SQLAlchemy
@@ -61,30 +62,136 @@
 \vspace{0.125in}
 
 \begin{itemize}[leftmargin=0in]
+    \item[] \textbf{Artificial Inteligence, Machine Learning, Genetic Programming, and Computer Vision} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \begin{itemize}[leftmargin=0in]
+            \item[] 
+                \begin{samepage}
+                    \textbf{Segmentum Solar} \hfill \textbf{April 2018-Present} \\
+                    This project aims to provide enough horsepower for my other ML projects. The list of hardware and service inventory that I've assembled follows.
+                    \begin{itemize}
+                        \item[\textbullet] A 40 core Dell r810 with 256 GB of RAM
+                        \item[\textbullet] A home built Intel i9 with 48 GB of RAM and a GTX 1080 TI
+                        \item[\textbullet] A 8 core Dell r410 intended for use as a virtual router/gateway.
+                        \item[\textbullet] A Synology DS718+ 8TB NAS
+                        \item[\textbullet] A bare metal depoyment of Kubernetes with the helm package manager.
+                    \end{itemize}
+                \end{samepage}
+            \item[] 
+                \begin{samepage}
+                    \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
+                    This work is an attempt to implement computer vision tools to isolate game artifacts and 
+                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
+                    reverse engineering games.
+                    \begin{itemize}
+                        \item[\textbullet] Analyzes NES games using computer vision and machine learning
+                        \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
+                        \item[\textbullet] Extract sprites for player and non-player characters (PC, NPC respecitvely)
+                        \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
+                        \item[\textbullet] Perform optical character recognition to extract textual information from individual frames
+                    \end{itemize}
+                \end{samepage}
+            \item[] 
+                \begin{samepage}
+                    \textbf{LeisurelyScript Game Description Language} \hfill \textbf{May 2012-Present} \\
+                    A game description language (GDL) is a computer language that describes the rules of a game. 
+                    This project was inspired by my interest in machine learning and AI. It has been spurred on by the 
+                    Stanford general game playing MOOC. The ultimate goal is to explore the properties that make a game
+                    fun, which can be used for the evaluation of new games produced using genetic programming techniques. 
+                    The LeisurelyScript language draws heavily from the language 
+                    outlined in Cameron Browne's "Automatic Generation and Evaluation".
+                    \begin{itemize}
+                        \item[\textbullet] LeisurelyScript uses Scala compiler macros to parse my extension to the language 
+                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in Scala 
+                        \item[\textbullet] The state machine implements a standard API that an AI can query for required information
+                        \item[\textbullet] The state machine will then be fed into a WIP evaluation and genetic programming framework
+                        \item[\textbullet] The end goal of this is to produce a ML ecosystem that is capable of randomly generating game rules
+
+                    \end{itemize}
+                \end{samepage}
+        \end{itemize}
+\end{itemize}
+\vspace{0.25in}
+
+\begin{itemize}[leftmargin=0in]
     \item[] 
-        \textbf{Cambia Health Solutions: Senior Application Engineer III} \hfill \textbf{February 2016-Present} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        \textbf{Gametime United: Senior Developer} \hfill \textbf{March 2019-October 2019} \\[-0.1in] \rule{\textwidth}{0.5pt}
         %TODO: This needs more work
-        As part of Cambia's ongoing migration to the clound I have had an opportunity to add value to all aspects of our tech stack.
+        As part of Gametime's backend developer team I was responsible for feature work as well as maintenance and developer support for our internal tooling.
+        As a senior developer I also contributed to architectural discussions and researched/lead efforts to improve our codebase and tooling.
         \vspace{0.125in}
         \item[] 
             \begin{samepage}
-                \textbf{Juno Migration} \hfill \textbf{October 2016-Present} \\
-                Juno is a new aws account/environment with better amenities and more "handrails" to help developers deploy their code. 
-                A lot of work is required to migrate our tools and services to the new environment. I was chosen to be my team's lead 
-                lead in this effort and have been deprecating old, incompatible services in preparation for this effort.
+                \textbf{Mongo Migration} \hfill \textbf{March-August 2019} \\
+                When I started at Gametime, plans were underway to migrate from a self managed mongo cluster, to one managed by Atlas.
+                The intention being to save developer time and money, while simultaneously increasing quality and reliability.
                 \begin{itemize}
-                    \item[\textbullet] Currently refactoring old foundational libraries/modules to make use of new infrastructure features 
-                    \item[\textbullet] Cuttently integrating into our service mest Envoy to make use of cutting edge service mesh technology
-                    \item[\textbullet] Deprecated 73 very old and incompatible AWS instances and related infrastructure, 
-                    \item[\textbullet] The instance alone save Cambia \$20,000 per month
-                    \item[\textbullet] Designed a cutting edge service mesh based on envoy and the aws elastic kubernetes service
+                    \item[\textbullet] Backups were being taken of the self hosted cluster, but no one had ever actually checked that they worked. I called this out and subsequently validated that they were correct.
+                    \item[\textbullet] Performed a cross validation of data on the two clusters at the behest of the VP. Validation included several key metrics, as well as a detailed validation of a statistically significant sample of the clusters.
+                    %TODO: \item[\textbullet] More things here.
                 \end{itemize}
             \end{samepage}
             \vspace{0.125in}
+
+            \begin{samepage}
+                \textbf{Restful API development in Go} \hfill \textbf{March-October 2019} \\
+                \begin{itemize}
+                    \item[\textbullet] All new Restful API features at Gametime were written in Go using the echo web framework
+                    \item[\textbullet] Was personally responsible for converting several legacy rails endpoints to Go
+                    %TODO: \item[\textbullet] More things here.
+                \end{itemize}
+            \end{samepage}
+            \vspace{0.125in}
+
+            \begin{samepage}
+                \textbf{Bulk refactor and other proposals} \hfill \textbf{June-October 2019} \\
+                When first adopted, Go was a new language to Gametime. As always with new tools, it took a while for the developers to gain 
+                experience with the new language and become comfortable with the new language.  As such, the codebase developed very organic 
+                while the general code architecture was devised. This organic growth lead to maintainability issues.
+                \begin{itemize}
+                    \item[\textbullet] Identified and devised solutions to maintainability issues.
+                    \item[\textbullet] Issues included:
+                    \begin{itemize}
+                      \item[\textbullet] "type bloat" or many different versions of the same information being present in the same scope.
+                      \item[\textbullet] Cross service type safety. gRPC/Protobuf was present in the codebase and is to mitigate this, but had fallen out of favor. I proposed automated refactoring tools. 
+                      \item[\textbullet] 
+                    \end{itemize}
+                    \item[\textbullet] Devised and began work on a code analysis and refactoring tool inspired by Go Guru.
+                    \item[\textbullet] Code refactoring tool would download all Gametime repositories, sort them by language, and then use the go/* packages to parse and analyze the go repos
+                    \item[\textbullet] Proposed and architected a drop-in solution for the issues with visibility and deployment using Envoy and AWS App Mesh
+                \end{itemize}
+            \end{samepage}
+            \vspace{0.125in}
+        % META: end.section.experience.gametime.mongo_migration
+\end{itemize}
+\vspace{0.25in}
+
+\begin{itemize}[leftmargin=0in]
+    \item[] 
+        \textbf{Cambia Health Solutions: Senior Application Engineer III} \hfill \textbf{February 2016-March 2019} \\[-0.1in] \rule{\textwidth}{0.5pt}
+        %TODO: This needs more work
+        As part of Cambia's ongoing migration to the cloud I have had an opportunity to add value to all aspects of our tech stack.
+        \vspace{0.125in}
+        % META: begin.section.experience.cambia.juno_migration
+        \item[] 
+            \begin{samepage}
+                \textbf{Juno Migration} \hfill \textbf{October 2016-March 2019} \\
+                Juno is a new AWS account/environment with better amenities and more "handrails" to help developers deploy their code. 
+                A lot of work is required to migrate our tools and services to the new environment. I was chosen to be my team's lead 
+                lead in this effort and have been deprecating old, incompatible services in preparation for this effort.
+                \begin{itemize}
+                    \item[\textbullet] Refactored old foundational libraries/modules to make use of new infrastructure features 
+                    \item[\textbullet] Meticulously planned a service mesh integration using Envoy to make use of cutting edge service mesh technology
+                    \item[\textbullet] Deprecated 73 very old and incompatible AWS instances and related infrastructure, 
+                    \item[\textbullet] The instances alone save Cambia \$20,000 per month
+                    \item[\textbullet] Designed a cutting edge service mesh based on envoy and the AWS elastic kubernetes service
+                \end{itemize}
+            \end{samepage}
+            \vspace{0.125in}
+        % META: end.section.experience.cambia.juno_migration
         % META: begin.section.experience.cambia.ci_cd_pipeline
         \item[] 
             \begin{samepage}
-                \textbf{CI/CD Pipeline} \hfill \textbf{October 2016-Present} \\
+                \textbf{CI/CD Pipeline} \hfill \textbf{October 2016-March 2019} \\
                 I designed our CI/CD pipeline to give my team a stable baseline for my our HIPPA compliant docker based infrastructure.
                 \begin{itemize}
                     \item[\textbullet] Designed and wrote Ansible IaC for baking and deploying ec2 instances
@@ -99,7 +206,7 @@
         % META: begin.section.experience.cambia.ci_cd_cps
         \item[] 
             \begin{samepage}
-                \textbf{Consumer Profile Settings} \hfill \textbf{February 2016-March 2016} \\
+                \textbf{Consumer Profile Settings} \hfill \textbf{February-March 2016} \\
                 I helped design and implement our Consumer profile settings (CPS) project to store member information and preferences in a HIPAA compliant manner.
                 \begin{itemize}
                     \item[\textbullet] Stores HIPAA PII and PHI in searchable encrypted dynamoDB tables
@@ -204,7 +311,7 @@
                 \end{samepage}
             \item[]
                 \begin{samepage}
-                    \textbf{Precision Dynamics International} \hfill \textbf{May 2012- September 2012} \\
+                    \textbf{Precision Dynamics International} \hfill \textbf{April-September 2012} \\
                     Contractor portal used to coordinate and invoice contracted drivers.
                     \begin{itemize}
                         \item[\textbullet] Utilizes Python 2.7, Django 1.4, Latex, Python-Excel, among others
@@ -217,57 +324,6 @@
         \end{itemize}
 \end{itemize}
 \vspace{0.25in}
-
-\begin{itemize}[leftmargin=0in]
-    \item[] \textbf{Artificial Inteligence, Machine Learning, Genetic Programming, and Computer Vision} \\[-0.1in] \rule{\textwidth}{0.5pt}
-        \begin{itemize}[leftmargin=0in]
-            \item[] 
-                \begin{samepage}
-                    \textbf{Segmentum Solar} \hfill \textbf{April 2018-Present} \\
-                    This project aims to provide enough horsepower for my other ML projects. The list of hardware and service inventory that I've assemled follows.
-                    \begin{itemize}
-                        \item[\textbullet] A 40 core Dell r810 with 256 GB of RAM
-                        \item[\textbullet] A home built Intel i9 with 48 GB of RAM and a GTX 1080 TI
-                        \item[\textbullet] A 8 core Dell r410 intended for use as a virtual router/gateway.
-                        \item[\textbullet] A Synology DS718+ 8TB NAS
-                        \item[\textbullet] A bare metal depoyment of Kubernetes with the helm package manager.
-                    \end{itemize}
-                \end{samepage}
-            \item[] 
-                \begin{samepage}
-                    \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
-                    This work is an attempt to implement computer vision tools to isolate game artifacts and 
-                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
-                    reverse engineering games.
-                    \begin{itemize}
-                        \item[\textbullet] Analyzes NES games using computer vision and machine learning
-                        \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
-                        \item[\textbullet] Extract sprites for player and non-player characters (PC, NPC respecitvely)
-                        \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
-                        \item[\textbullet] Perform optical character recognition to extract textual information from individual frames
-                    \end{itemize}
-                \end{samepage}
-            \item[] 
-                \begin{samepage}
-                    \textbf{LeisurelyScript Game Description Language} \hfill \textbf{May 2012-Present} \\
-                    A game description language (GDL) is a computer language that describes the rules of a game. 
-                    This project was inspired by my interest in machine learning and AI. It has been spurred on by the 
-                    Stanford general game playing MOOC. The ultimate goal is to explore the properties that make a game
-                    fun, which can be used for the evaluation of new games produced using genetic programming techniques. 
-                    The LeisurelyScript language draws heavily from the language 
-                    outlined in Cameron Browne's "Automatic Generation and Evaluation".
-                    \begin{itemize}
-                        \item[\textbullet] LeisurelyScript uses Scala compiler macros to parse my extension to the language 
-                        \item[\textbullet] The compiler is used for the generation of a state machine expressed in Scala 
-                        \item[\textbullet] The state machine implements a standard API that an AI can query for required information
-                        \item[\textbullet] The state machine will then be fed into a WIP evaluation and genetic prgramming framework
-                        \item[\textbullet] The end goal of this is to produce a ML ecosystem that is capable of randomly generating game rules
-
-                    \end{itemize}
-                \end{samepage}
-        \end{itemize}
-\end{itemize}
-
 
 \begin{itemize}[leftmargin=0in]
     \item[] \textbf{PERSONAL PROJECTS} \\[-0.1in] \rule{\textwidth}{0.5pt}
