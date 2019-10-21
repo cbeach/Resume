@@ -83,11 +83,11 @@
                     sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
                     reverse engineering games.
                     \begin{itemize}
-                        \item[\textbullet] Analyzes NES games using computer vision and machine learning
-                        \item[\textbullet] Determines the size of repeating tiles by using fast fourier transforms
-                        \item[\textbullet] Extract sprites for player and non-player characters (PC, NPC respecitvely)
+                        \item[\textbullet] I Analyze NES games using computer vision and machine learning
+                        \item[\textbullet] My sorware determines the size of repeating tiles by using fast fourier transforms
+                        \item[\textbullet] I extract sprites for player and non-player characters (PC, NPC respecitvely)
                         \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
-                        \item[\textbullet] Perform optical character recognition to extract textual information from individual frames
+                        \item[\textbullet] I perform optical character recognition to extract textual information from individual frames
                     \end{itemize}
                 \end{samepage}
             \item[] 
@@ -104,7 +104,7 @@
                         \item[\textbullet] The compiler is used for the generation of a state machine expressed in Scala 
                         \item[\textbullet] The state machine implements a standard API that an AI can query for required information
                         \item[\textbullet] The state machine will then be fed into a WIP evaluation and genetic programming framework
-                        \item[\textbullet] The end goal of this is to produce a ML ecosystem that is capable of randomly generating game rules
+                        \item[\textbullet] My end goal is to produce a ML ecosystem that is capable of randomly generating game rules
 
                     \end{itemize}
                 \end{samepage}
@@ -120,47 +120,37 @@
         As a senior developer I also contributed to architectural discussions and researched/lead efforts to improve our codebase and tooling.
         \vspace{0.125in}
         \item[] 
-            \begin{samepage}
-                \textbf{Mongo Migration} \hfill \textbf{March-August 2019} \\
-                When I started at Gametime, plans were underway to migrate from a self managed mongo cluster, to one managed by Atlas.
-                The intention being to save developer time and money, while simultaneously increasing quality and reliability.
-                \begin{itemize}
-                    \item[\textbullet] Backups were being taken of the self hosted cluster, but no one had ever actually checked that they worked. I called this out and subsequently validated that they were correct.
-                    \item[\textbullet] Performed a cross validation of data on the two clusters at the behest of the VP. Validation included several key metrics, as well as a detailed validation of a statistically significant sample of the clusters.
-                    %TODO: \item[\textbullet] More things here.
-                \end{itemize}
-            \end{samepage}
-            \vspace{0.125in}
+            \textbf{Mongo Migration} \hfill \textbf{March-August 2019} \\
+            When I started at Gametime, plans were underway to migrate from a self managed mongo cluster, to one managed by Atlas.
+            The intention being to save developer time and money, while simultaneously increasing quality and reliability.
+            \begin{itemize}
+                \item[\textbullet] Backups were being taken of the self hosted cluster, but no one had ever actually checked that they worked. I called this out and subsequently validated that they were correct.
+                \item[\textbullet] I performed a cross validation of data on the two clusters at the behest of the VP. Validation included several key metrics, as well as a detailed validation of a statistically significant sample of the clusters.
+                %TODO: \item[\textbullet] More things here.
+            \end{itemize}
+        \vspace{0.125in}
 
-            \begin{samepage}
-                \textbf{Restful API development in Go} \hfill \textbf{March-October 2019} \\
-                \begin{itemize}
-                    \item[\textbullet] All new Restful API features at Gametime were written in Go using the echo web framework
-                    \item[\textbullet] Was personally responsible for converting several legacy rails endpoints to Go
-                    %TODO: \item[\textbullet] More things here.
-                \end{itemize}
-            \end{samepage}
-            \vspace{0.125in}
+        \textbf{Restful API development in Go} \hfill \textbf{March-October 2019} \\
+        \begin{itemize}
+            \item[\textbullet] All new Restful API features at Gametime were written in Go using the echo web framework
+            \item[\textbullet] Was responsible for converting legacy rails endpoints to Go
+            %TODO: \item[\textbullet] More things here.
+        \end{itemize}
+        \vspace{0.125in}
 
-            \begin{samepage}
-                \textbf{Bulk refactor and other proposals} \hfill \textbf{June-October 2019} \\
-                When first adopted, Go was a new language to Gametime. As always with new tools, it took a while for the developers to gain 
-                experience with the new language and become comfortable with the new language.  As such, the codebase developed very organic 
-                while the general code architecture was devised. This organic growth lead to maintainability issues.
-                \begin{itemize}
-                    \item[\textbullet] Identified and devised solutions to maintainability issues.
-                    \item[\textbullet] Issues included:
-                    \begin{itemize}
-                      \item[\textbullet] "type bloat" or many different versions of the same information being present in the same scope.
-                      \item[\textbullet] Cross service type safety. gRPC/Protobuf was present in the codebase and is to mitigate this, but had fallen out of favor. I proposed automated refactoring tools. 
-                      \item[\textbullet] 
-                    \end{itemize}
-                    \item[\textbullet] Devised and began work on a code analysis and refactoring tool inspired by Go Guru.
-                    \item[\textbullet] Code refactoring tool would download all Gametime repositories, sort them by language, and then use the go/* packages to parse and analyze the go repos
-                    \item[\textbullet] Proposed and architected a drop-in solution for the issues with visibility and deployment using Envoy and AWS App Mesh
-                \end{itemize}
-            \end{samepage}
-            \vspace{0.125in}
+        \textbf{Bulk refactor and other proposals} \hfill \textbf{June-October 2019} \\
+        When first adopted, Go was a new language to Gametime. This led to the codebase developing organically 
+        while the code architecture was devised. This organic growth let to maintainability issues. I identified 
+        issues such as "type bloat" where many different versions of the same information are present in the same 
+        scope and cross service type safety where fRPC/Protbuf was present in the codebase. I worked to resolve these issues by:
+        \begin{itemize}
+            \item[\textbullet] Devised and worked on a code analysis and refactoring tool inspired by Go Guru.
+            \begin{itemize}
+              \item[\textbullet] Code refactoring tool would download all Gametime repositories, sort them by language, and then use the go/* packages to parse and analyze the go repos
+            \end{itemize}
+            \item[\textbullet] Proposed and architected a drop-in solution for the issues with visibility and deployment using Envoy and AWS App Mesh
+        \end{itemize}
+        \vspace{0.125in}
         % META: end.section.experience.gametime.mongo_migration
 \end{itemize}
 \vspace{0.25in}
