@@ -49,11 +49,10 @@
         \textbf{Libraries and Frameworks}
         \begin{itemize}
             \item Go echo
-            \item NetflixOSS
             \item Apache Spark
             \item Django
             \item Python Pandas
-            \item Node.js
+            \item NodeJS
             \item Flask \& SQLAlchemy
         \end{itemize}
     \end{multicols}
@@ -62,7 +61,7 @@
 \vspace{0.125in}
 
 \begin{itemize}[leftmargin=0in]
-    \item[] \textbf{Artificial Inteligence, Machine Learning, Genetic Programming, and Computer Vision} \\[-0.1in] \rule{\textwidth}{0.5pt}
+    \item[] \textbf{Artificial Intelligence, Machine Learning, Genetic Programming, and Computer Vision} \\[-0.1in] \rule{\textwidth}{0.5pt}
         \begin{itemize}[leftmargin=0in]
             \item[] 
                 \begin{samepage}
@@ -73,19 +72,19 @@
                         \item[\textbullet] A home built Intel i9 with 48 GB of RAM and a GTX 1080 TI
                         \item[\textbullet] A 8 core Dell r410 intended for use as a virtual router/gateway.
                         \item[\textbullet] A Synology DS718+ 8TB NAS
-                        \item[\textbullet] A bare metal depoyment of Kubernetes with the helm package manager.
+                        \item[\textbullet] A bare metal deployment of Kubernetes with the helm package manager.
                     \end{itemize}
                 \end{samepage}
             \item[] 
                 \begin{samepage}
                     \textbf{Deep Thought} \hfill \textbf{May 2012-Present} \\
                     This work is an attempt to implement computer vision tools to isolate game artifacts and 
-                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervized tool capable of automatically 
+                    sprites, and game rules from retro games. The ultimate goal is to create an unsupervised tool capable of automatically 
                     reverse engineering games.
                     \begin{itemize}
                         \item[\textbullet] I Analyze NES games using computer vision and machine learning
-                        \item[\textbullet] My sorware determines the size of repeating tiles by using fast fourier transforms
-                        \item[\textbullet] I extract sprites for player and non-player characters (PC, NPC respecitvely)
+                        \item[\textbullet] My software determines the size of repeating tiles by using fast fourier transforms
+                        \item[\textbullet] I extract sprites for player and non-player characters (PC, NPC respectively)
                         \item[\textbullet] Statistically analyze input and output to find correlation between input and on-screen behavior
                         \item[\textbullet] I perform optical character recognition to extract textual information from individual frames
                     \end{itemize}
@@ -142,7 +141,7 @@
         When first adopted, Go was a new language to Gametime. This led to the codebase developing organically 
         while the code architecture was devised. This organic growth let to maintainability issues. I identified 
         issues such as "type bloat" where many different versions of the same information are present in the same 
-        scope and cross service type safety where fRPC/Protbuf was present in the codebase. I worked to resolve these issues by:
+        scope and cross service type safety where gRPC/Protbuf was present in the codebase. I worked to resolve these issues by:
         \begin{itemize}
             \item[\textbullet] Devised and worked on a code analysis and refactoring tool inspired by Go Guru.
             \begin{itemize}
@@ -182,7 +181,7 @@
         \item[] 
             \begin{samepage}
                 \textbf{CI/CD Pipeline} \hfill \textbf{October 2016-March 2019} \\
-                I designed our CI/CD pipeline to give my team a stable baseline for my our HIPPA compliant docker based infrastructure.
+                I designed our CI/CD pipeline to give my team a stable baseline for my our HIPAA compliant docker based infrastructure.
                 \begin{itemize}
                     \item[\textbullet] Designed and wrote Ansible IaC for baking and deploying ec2 instances
                     \item[\textbullet] Helped us become the first team in Cambia to deploy dockerized services to production
@@ -202,20 +201,19 @@
                     \item[\textbullet] Stores HIPAA PII and PHI in searchable encrypted dynamoDB tables
                     \item[\textbullet] NodeJS based services are built and deployed as docker containers
                     \item[\textbullet] Containers are built using gitlab-ci, and then deployed via Jenkins
-                    \item[\textbullet] Uses ansible to provision resources in AWS
-                    \item[\textbullet] Developed several npm modules for use as utilities
+                    \item[\textbullet] Uses Ansible to provision resources in AWS
+                    \item[\textbullet] Developed several NPM modules for use as utilities
                 \end{itemize}
             \end{samepage}
             \vspace{0.125in}
         % META: end.section.experience.cambia.cps
 \end{itemize}
 \vspace{0.25in}
-
 \begin{itemize}[leftmargin=0in]
     \item[] 
         \textbf{Nike Dreams: Senior Application Engineer} \hfill \textbf{September 2014-June 2015} \\[-0.1in] \rule{\textwidth}{0.5pt}
         The Dreams project aims to bring near-real time monitoring and analytics to Nike. It heavily utilizes the NetflixOSS stack for managing
-        AWS and several apache tools for stream processing. Finally, it uses both Couchbase and the ELK (Elasticsearch, Logstash, Kibana) 
+        AWS and several Apache tools for stream processing. Finally, it uses both Couchbase and the ELK (Elasticsearch, Logstash, Kibana) 
         stack for storage, search, and visualization.
         \vspace{0.125in}
         \begin{itemize}[leftmargin=0in]
@@ -235,9 +233,9 @@
                     We are using the ELK stack for search and visualization. This allows business users to explore and understand the data which is being collected.
                     \begin{itemize}
                         \item[\textbullet] Authored a Kibana 4 sidecar which gives the Kibana server access to the NetflixOSS stack
-                        \item[\textbullet] Deployed and managed an ELK stack that allowed business users to visuallize near real time data
+                        \item[\textbullet] Deployed and managed an ELK stack that allowed business users to visualize near real time data
                         \item[\textbullet] Allowed business users to search and visualize traffic to Nike.com in near real time by utilizing Elasticsearch and Kibana 
-                        \item[\textbullet] Facilitated rapid debugging by forwarding all Spark cluster system logs to ElasticSearch
+                        \item[\textbullet] Facilitated rapid debugging by forwarding all Spark cluster system logs to Elasticsearch
                     \end{itemize}
                 \end{samepage}
         \end{itemize}
@@ -315,6 +313,7 @@
 \end{itemize}
 \vspace{0.25in}
 
+
 \begin{itemize}[leftmargin=0in]
     \item[] \textbf{PERSONAL PROJECTS} \\[-0.1in] \rule{\textwidth}{0.5pt}
             \item[] 
@@ -334,7 +333,7 @@
             \item[] 
                 \begin{samepage}
                     \textbf{Minor Projects} \hfill \textbf{December 2013-February 2014} \\
-                    I have several very small ongoing project in addtion to those listed above.
+                    I have several very small ongoing project in addition to those listed above.
                     \begin{itemize}
                         \item[\textbullet] Computer controlled kegerator:  A kegerator that posts temperature readings to a database
                         \item[\textbullet] Sous Vide:  A method of slow cooking that uses a water bath set to a very precise temperature
@@ -378,8 +377,8 @@
                     Github.com/cbeach/twitter\_vamp 
 
                     I am working on a server that will passively collect public status updates from the
-                    Twitter streaming api. These status updates will be stored so that other PSU student
-                    and myself may do natural langauge processing, semantic analysis, and datamining on
+                    Twitter streaming API. These status updates will be stored so that other PSU student
+                    and myself may do natural language processing, semantic analysis, and data-mining on
                     a very large dataset.				
                 \end{samepage}
 
@@ -407,7 +406,7 @@
     Graduation Date: March 2012 \\
 
     \columnbreak
-    \textbf{Bachcelor's Degree , Business Admin.} \\
+    \textbf{Bachelor's Degree , Business Admin.} \\
     Oregon State University, Corvallis Oregon, \\
     Graduation Date: March 2007 \\
     Concentration: Entrepreneurship
