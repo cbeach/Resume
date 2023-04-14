@@ -21,48 +21,185 @@
 
 \begin{resume}
 \section{SKILLS}
-    \begin{multicols}{3}
+    \begin{multicols}{2}
         \textbf{Languages}
         \begin{itemize}
             \item Python
             \item Go
-            \item Node/JavaScript
-            \item Java
+            \item Node/JavaScript/TypeScript
+            \item Java/Scala
             \item C/C++
-            \item Scala
         \end{itemize}
         \columnbreak
 
         \textbf{Tools}
         \begin{itemize}
-            \item Vim
             \item Git
-            \item Valgrind
-            \item kCacheGrind
-            \item AWS (EC2, ECS, Lambda, EMR, S3, DynamoDB)
+            \item AWS 
             \item Docker
-            \item Rancher
-            \item ELK Stack
+            \item Ceph
+            \item Kubernetes
+            \item Ansible
+            \item Cloud Formation
         \end{itemize}
         \columnbreak
 
-        \textbf{Libraries and Frameworks}
-        \begin{itemize}
-            \item Go echo
-            \item Apache Spark
-            \item Django
-            \item Python Pandas
-            \item NodeJS
-            \item Flask \& SQLAlchemy
-        \end{itemize}
+        %\textbf{Libraries and Frameworks}
+        %\begin{itemize}
+        %    \item Apache Spark
+        %    \item NodeJS
+        %    \item Flask \& SQLAlchemy
+        %\end{itemize}
     \end{multicols}
 
 \section{EXPERIENCE}
 \vspace{0.125in}
 
+%\begin{itemize}[leftmargin=0in]
+%    \item[]
+%    \textbf{Job: Title} \hfill \textbf{Start Month-End Month} \\[-0.1in] \rule{\textwidth}{0.5pt}
+%    %TODO: This needs more work
+%    Description
+%    \vspace{0.125in}
+%    \item[]
+%    \textbf{Team 1} \hfill \textbf{Start-End} \\
+%    Team description
+%    \begin{itemize}
+%        \item[]
+%        \textbf{Project 1} \hfill \textbf{Start-End} \\
+%        Project description
+%        \begin{itemize}
+%            \item[\textbullet] Bulleted list of responsivility/deliverables
+%            \item[\textbullet] another thing
+%        \end{itemize}
+%        \vspace{0.125in}
+%    \end{itemize}
+%    \vspace{0.125in}
+%
+%    \textbf{Team2} \hfill \textbf{Start-End} \\
+%    Team description
+%    \begin{itemize}
+%        \item[]
+%        \textbf{Project} \hfill \textbf{Start-End} \\
+%        Project description
+%        \begin{itemize}
+%            \item[\textbullet] Bulleted list of responsivility/deliverables
+%            \item[\textbullet]
+%        \end{itemize}
+%        \vspace{0.125in}
+%    \end{itemize}
+%    \vspace{0.125in}
+%    % META: end.section.experience.gametime.mongo_migration
+%\end{itemize}
+%\vspace{0.25in}
 
 \begin{itemize}[leftmargin=0in]
-    \item[] 
+    \item[]
+    \textbf{Amazon: Software Development Engineer 2 (L5)} \hfill \textbf{May 2020-March 2023} \\[-0.1in] \rule{\textwidth}{0.5pt}
+    \vspace{0.125in}
+    \item[]
+    \textbf{Elastic Kubernetes Service: Control Plane} \hfill \textbf{October 2022-March 2023} \\
+    The elastic kubernetes service (EKS) control plane team (EKS:CP) is responsible for deploying a managed control plane for every new kubernetes cluster that is created by AWS customers.
+    \begin{itemize}
+        \item[]
+        \textbf{Pod Details Optimizations} \hfill \textbf{November 2022-January 2023} \\
+        The pod details data flow collected and recorded pod start, stop, and sync events directly from the kubernetes cluster. It was an important part of billing for teams across AWS.
+        \begin{itemize}
+            \item[\textbullet] Analyzed known bottle necks in the cluster events data flow that were resulting in persistent billing issues
+            \item[\textbullet] Designed and implemented several dynamo DB optimizations to alleviate the billing issues
+            \item[\textbullet] One such optimization included the design and execution of a partition/sort key migration.
+        \end{itemize}
+        \vspace{0.125in}
+        \item[]
+        \textbf{Operations and Sev2 reduction} \hfill \textbf{November 2022-January 2023} \\
+        The first order of business on the EKS:CP team was to start making headway on the list of high severity operational action items.
+        \begin{itemize}
+            \item[\textbullet] Resolved a critical privilege escalation vulnerability 
+            \item[\textbullet] Analyzed operational workflows to streamline operations during high severity incidents
+            \item[\textbullet] Designed a command center tool to give visibility and control over many active accounts
+        \end{itemize}
+        \vspace{0.125in}
+    \end{itemize}
+    \vspace{0.125in}
+    \item[]
+    \textbf{Prime Video: Creative Personalization} \hfill \textbf{January 2022-October 2022} \\
+    The creative personalization (PV:CP) team/project aimed to transition from a globally optimized experience on Prime video's homepage to one that is personalized on an individual level.
+    To do this PV:CP utilized AWS Sagemaker and cutting edge machine learning algorithms.
+    \begin{itemize}
+        \item[]
+        \textbf{Uplift monitoring dashboard rewrite} \hfill \textbf{March 2022-June 2022} \\
+        The data pipeline in question produced reports that became the metric by which the model's performance was evaluated. 
+        When I joined the team it had been broken for several months due to scalability issues that were present in its original design.
+        Since fixing it was suddenly vital I was given the opportunity to redesign it to be more accurate and resilient. 
+        \begin{itemize}
+            \item[\textbullet] Collected stake holder requirements from business analytics and marketing
+            \item[\textbullet] Optimized the scala spark code to process data more quickly
+            \item[\textbullet] Reorganized the pipeline into a two stage flow
+            \item[\textbullet] Stage one ran hourly and aggregated a single hour's data, stage two analyzed one day's worth of aggregated data
+        \end{itemize}
+        \vspace{0.125in}
+        \item[]
+        \textbf{Launch of asset personalization} \hfill \textbf{January 2022-November 2022} \\
+        \begin{itemize}
+            \item[\textbullet] Coordinated the launch of PV:CP's first personalized model
+            \item[\textbullet] Analyzed critical performance bottlenecks 
+            \item[\textbullet] Implemented optimizations that improved performance by 80\%
+        \end{itemize}
+        \vspace{0.125in}
+    \end{itemize}
+    \vspace{0.125in}
+
+    \item[]
+    \textbf{Cloud Front: Routing} \hfill \textbf{May 2020-December 2022} \\
+    The Routing team in Cloud Front is responsible for routing inbound traffic from the internet to the
+    point of presence (PoP) with the least latency. This is achieved by using custom build DNS servers.
+    \begin{itemize}
+        \item[]
+        \textbf{Edge Trex} \hfill \textbf{March 2021-December 2021} \\
+        The massive amount of data that must be dealt with at Cloud Front is hard to overstate. To make matters worse,
+        much of the data is non-localized. An operator is required to log into many different systems to trouble shoot even basic problems.
+        A tool was required to gather, analyze, and visualize massive quantities of data needed to diagnose customer issues.
+        \begin{itemize}
+            \item[\textbullet] Responsible for primary architecture, design, and tool choice
+            \item[\textbullet] Introduced cutting edge tools such as GraphQL, AWS CDK, Kotlin, ECS into CloudFront's tech stack
+            \item[\textbullet] Delivered infrastructure (CDK) and GraphQL contracts/integration
+            \item[\textbullet] Configured/implemented the authentication/authorization scheme to enhance security and limit access
+        \end{itemize}
+        \vspace{0.125in}
+
+        \item[]
+        \textbf{Cardinality Analysis} \hfill \textbf{October 2020-March 2021} \\
+        CloudFront routes traffic to its point of presence PoPs based on the IP address of a client's DNS router.
+        This analysis was done to determine the feasibility of routing based on individual client:resolver pairs and required multiple Petabytes of data.
+        \begin{itemize}
+            \item[\textbullet] First stage of analysis used AWS Athena to aggregate data
+            \item[\textbullet] This required extensive scripting to first import the data into S3 and then partition the data to avoid timeouts in Athena
+            \item[\textbullet] Second stage of analysis used scala spark for more complicated analyses 
+            \item[\textbullet] Analysis showed positive results allowing project planning commenced
+        \end{itemize}
+        \vspace{0.125in}
+
+        \item[]
+        \textbf{RECON Migration} \hfill \textbf{May 2020-October 2020} \\
+        In a first for CloudFront, this project was focused on moving a very simple service into AWS. 
+        My role was to head the design and implementation of the infrastructure portion
+        of the project.
+
+        \begin{itemize}
+          \item[\textbullet] Developed and implemented the full AWS architecture including networking, instance scaling, etc.
+          \item[\textbullet] Implemented all CloudFormation Infrastructure as Code (IaC) 
+          \item[\textbullet] Designed, planned, and executed the network/DNS updates required for the zero-downtime rollover
+        \end{itemize}
+        \vspace{0.125in}
+
+    \end{itemize}
+    \vspace{0.125in}
+
+    % META: end.section.experience.gametime.mongo_migration
+\end{itemize}
+\vspace{0.25in}
+\begin{itemize}[leftmargin=0in]
+    \item[]
         \textbf{Gametime United: Senior Developer} \hfill \textbf{March 2019-October 2019} \\[-0.1in] \rule{\textwidth}{0.5pt}
         %TODO: This needs more work
         As part of Gametime's backend developer team I was responsible for feature work as well as maintenance and developer support for our internal tooling.

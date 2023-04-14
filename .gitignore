@@ -3,5 +3,6 @@
 *.aux
 *.pdf
 *.swp
+cover_letters/specific/
 
 temp.*
